@@ -1,0 +1,46 @@
+.uploadBox {
+    width: 300px;
+    height: 150px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 3px dashed #eee;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.uploadBox:hover {
+    border-color: #1a1a1a;
+}
+
+.uploadBox.active {
+    background-color: #888888;
+    border-color: #1a1a1a;
+}
+
+.uploadBox_file {
+    display: none;
+}
+
+.fileInfo {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.fileInfo .fileInfo_key {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.fileInfo .fileInfo_value {
+    font-size: 14px;
+}
