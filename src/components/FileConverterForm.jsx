@@ -2,7 +2,7 @@ import {useState} from "react"
 import UploadBox from "./UploadBox";
 import UploadButton from "./UploadButton.jsx";
 
-function FileConvert() {
+function FileConverterForm() {
     const [inputFile, setInputFile] = useState(null);
 
     const handleFileChange = (file) => {
@@ -51,4 +51,4 @@ function FileConvert() {
     )
 }
 
-export default FileConvert
+export default FileConverterForm

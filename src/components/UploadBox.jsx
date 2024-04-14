@@ -35,13 +35,13 @@ function UploadBox({onFileChange}) {
 
 
     return (
-        <label className={`uploadBox${isActive ? ' active' : ''}`}
+        <label className={`file-converter-form-upload-box${isActive ? ' active' : ''}`}
                onDragEnter={handleDragStart}
                onDragOver={handleDragOver}
                onDragLeave={handleDragEnd}
                onDrop={handleDrop}>
 
-            <input type="file" className="uploadBox_file"/>
+            <input type="file" className="file-converter-form-upload-box-file"/>
             {uploadFileInfo && <FileInfo uploadFileInfo={uploadFileInfo}/>}
 
             {!uploadFileInfo && (

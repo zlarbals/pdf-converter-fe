@@ -1,11 +1,11 @@
 function FileInfo({uploadFileInfo}) {
 
     return (
-        <ul className="fileInfo">
+        <ul className="file-converter-form-file-info">
             {Object.entries(uploadFileInfo).map(([key, value]) => (
                 <li key={key}>
-                    <span className="fileInfo_key">{key}</span>
-                    <span className="fileInfo_value">{value}</span>
+                    <span className="file-converter-form-file-info-key">{key}</span>
+                    <span className="file-converter-form-file-info-value">{value}</span>
                 </li>
             ))}
         </ul>

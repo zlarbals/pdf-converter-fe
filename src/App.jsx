@@ -1,12 +1,12 @@
-import FileHeader from "./components/FileHeader"
-import FileConvert from "./components/FileConvert"
+import FileConverterHeader from "./components/FileConverterHeader.jsx"
+import FileConverterForm from "./components/FileConverterForm.jsx"
 
 function App() {
 
   return (
     <div>
-      <FileHeader />
-      <FileConvert />
+      <FileConverterHeader />
+      <FileConverterForm />
     </div>
   )
 }

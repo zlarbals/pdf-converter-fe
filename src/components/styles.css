@@ -1,4 +1,4 @@
-.uploadBox {
+.file-converter-form-upload-box {
     width: 300px;
     height: 150px;
     margin: auto;
@@ -13,20 +13,20 @@
     cursor: pointer;
 }
 
-.uploadBox:hover {
+.file-converter-form-upload-box:hover {
     border-color: #4A90E2;
 }
 
-.uploadBox.active {
+.file-converter-form-upload-box.active {
     background-color: #888888;
     border-color: #1a1a1a;
 }
 
-.uploadBox_file {
+.file-converter-form-upload-box-file {
     display: none;
 }
 
-.fileInfo {
+.file-converter-form-file-info {
     width: 100%;
     list-style: none;
     padding: 0;
@@ -34,22 +34,23 @@
     flex-direction: column;
 }
 
-.fileInfo .fileInfo_key {
+.file-converter-form-file-info .file-converter-form-file-info-key {
     display: block;
+    color: #4A90E2;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 15px;
     margin-bottom: 4px;
 }
 
-.fileInfo .fileInfo_value {
-    font-size: 14px;
+.file-converter-form-file-info .file-converter-form-file-info-value {
+    font-size: 20px;
 }
 
-.center {
+.file-converter-center {
     text-align: center;
 }
 
-.header {
+.file-converter-header {
     background-color: #4A90E2;
     color: white;
     padding: 10px 20px;
@@ -59,7 +60,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.button {
+.file-converter-form-upload-button {
     background-color: #4A90E2; /* 버튼 배경색 */
     width: 300px;
     color: white;              /* 버튼 글자색 */
