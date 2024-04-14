@@ -1,5 +1,6 @@
 import {useState} from "react"
 import UploadBox from "./UploadBox";
+import UploadButton from "./UploadButton.jsx";
 
 function FileConvert() {
     const [inputFile, setInputFile] = useState(null);
@@ -45,9 +46,7 @@ function FileConvert() {
     return (
         <div>
             <UploadBox onFileChange={handleFileChange}/>
-            <div>
-                <button onClick={handleUpload}>pdf 변환</button>
-            </div>
+            <UploadButton onClickChange={handleUpload}/>
         </div>
     )
 }
