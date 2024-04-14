@@ -1,6 +1,8 @@
+import './styles.css'
+
 function FileHeader() {
   return (
-    <h2>PDF Converter</h2>
+    <header className="header">PDF Converter</header>
   )
 }
 

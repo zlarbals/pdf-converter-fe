@@ -14,7 +14,7 @@
 }
 
 .uploadBox:hover {
-    border-color: #1a1a1a;
+    border-color: #4A90E2;
 }
 
 .uploadBox.active {
@@ -43,4 +43,34 @@
 
 .fileInfo .fileInfo_value {
     font-size: 14px;
+}
+
+.center {
+    text-align: center;
+}
+
+.header {
+    background-color: #4A90E2;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    background-color: #4A90E2; /* 버튼 배경색 */
+    width: 300px;
+    color: white;              /* 버튼 글자색 */
+    border: none;              /* 테두리 제거 */
+    padding: 10px 20px;        /* 패딩 설정 */
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;           /* 글자 크기 */
+    border-radius: 5px;        /* 테두리 둥글게 설정 */
+    cursor: pointer;           /* 커서 모양 변경 */
+    outline: none;             /* 포커스 아웃라인 제거 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 버튼 그림자 */
+    transition: background-color 0.3s; /* 배경색 변경 애니메이션 */
 }
