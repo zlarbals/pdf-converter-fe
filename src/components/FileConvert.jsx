@@ -11,7 +11,7 @@ function FileConvert() {
 
     const handleUpload = async () => {
         if (!inputFile) {
-            console.log('파일을 선택하세요.');
+            alert('파일을 선택하세요.')
             return;
         }
 
@@ -33,12 +33,12 @@ function FileConvert() {
                 downloadLink.setAttribute('download', 'ConvertFile.pdf');
                 document.body.appendChild(downloadLink);
                 downloadLink.click();
-                document.body.removeCheld(downloadLink);
+                document.body.removeChild(downloadLink)
             } else {
-                console.error('파일 변환에 실패했습니다.');
+                alert('파일 변환에 실패했습니다.')
             }
         } catch (error) {
-            console.error('네트워크 오류', error);
+            alert('네트워크 오류 발생 \n잠시후 시도해보세요!')
         }
     };
 
