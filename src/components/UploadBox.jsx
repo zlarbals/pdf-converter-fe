@@ -21,9 +21,14 @@ function UploadBox({onFileChange}) {
         e.preventDefault();
 
         const file = e.dataTransfer.files[0];
-        console.log(file);
         onFileChange(file);
         setActive(false);
+        setFileInfo(file);
+    }
+
+    const handleFileSelect = (e) => {
+        const file = e.target.files[0];
+        onFileChange(file)
         setFileInfo(file);
     }
 
@@ -41,7 +46,7 @@ function UploadBox({onFileChange}) {
                onDragLeave={handleDragEnd}
                onDrop={handleDrop}>
 
-            <input type="file" className="file-converter-form-upload-box-file"/>
+            <input type="file" onChange={handleFileSelect} className="file-converter-form-upload-box-file"/>
             {uploadFileInfo && <FileInfo uploadFileInfo={uploadFileInfo}/>}
 
             {!uploadFileInfo && (
