@@ -21,15 +21,23 @@ function UploadBox({onFileChange}) {
         e.preventDefault();
 
         const file = e.dataTransfer.files[0];
-        onFileChange(file);
-        setActive(false);
-        setFileInfo(file);
+        if(file && isImageFile(file)) {
+            onFileChange(file);
+            setActive(false);
+            setFileInfo(file);
+        }else{
+            alert('이미지 파일만 가능합니다.')
+        }
     }
 
     const handleFileSelect = (e) => {
         const file = e.target.files[0];
-        onFileChange(file)
-        setFileInfo(file);
+        if(file && isImageFile(file)) {
+            onFileChange(file);
+            setFileInfo(file);
+        }else{
+            alert('이미지 파일만 가능합니다.');
+        }
     }
 
     const setFileInfo = (file) => {
@@ -38,6 +46,9 @@ function UploadBox({onFileChange}) {
         setUploadFileInfo({name, size, type});
     }
 
+    const isImageFile = (file) => {
+        return file.type.startsWith('image/');
+    }
 
     return (
         <label className={`file-converter-form-upload-box${isActive ? ' active' : ''}`}
